@@ -11,10 +11,10 @@ const searchForm = document.querySelector('.js-search-form');
 const galleryEl = document.querySelector('.js-gallery');
 const loader = document.querySelector('.js-loader');
 
+
 const showLoader = () => {
   loader.classList.remove('is-hidden');
 };
-
 const hideLoader = () => {
   loader.classList.add('is-hidden');
 };
@@ -25,7 +25,6 @@ const formSubmit = event => {
 
     const searchQuery = event.currentTarget.elements.user_search.value.trim();
     if (searchQuery === '') {
-        
         iziToast.error({ title: 'Error', message: 'Sorry, there are no images matching your search query. Please try again!' });
         return;
     }
