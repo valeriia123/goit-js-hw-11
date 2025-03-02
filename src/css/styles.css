@@ -5,14 +5,78 @@
   |============================
 */
 /* Common styles */
-@import url('./reset.css');
+ @import url('./reset.css');
 @import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+
+.container {
+  width: 1128px;
+  margin: auto;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-input {
+  height: 20px;
+  width: 300px;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.search-btn {
+  width: 60px;
+  height: 27px;
+  color: aliceblue;
+  background-color: rgb(7, 92, 92);
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 22px; 
+  justify-content: center;
+  width: 1128px;
+  padding: 0;
+}
+
+.gallery-item {
+  list-style: none;
+  width: 360px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; 
+  overflow: hidden;
+}
+
+.gallery-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top; 
+  border-radius: 10px;
+  display: block;
+}
+ 
+.is-hidden {
+  display: none;
+}
