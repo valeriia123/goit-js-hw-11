@@ -25,7 +25,7 @@ const formSubmit = event => {
 
     const searchQuery = event.currentTarget.elements.user_search.value.trim();
     if (searchQuery === '') {
-        iziToast.error({ title: 'Error', message: 'Sorry, there are no images matching your search query. Please try again!' });
+        iziToast.error({ title: 'Error', message: 'Sorry, search field cannot be empty. Please try again!' });
         return;
     }
     showLoader();
@@ -53,7 +53,7 @@ const formSubmit = event => {
             
         })
         .catch(err => {
-            iziToast.error({ title: 'Error', message: 'Sorry, there are no images matching your search query. Please try again!' });
+            iziToast.error({ title: 'Error', message: 'Sorry, something went wrong!' });
             console.error(err);
         })
         .finally(() => hideLoader());

@@ -10,7 +10,7 @@
 
 
 .container {
-  width: 1128px;
+  width: 1300px;
   margin: auto;
   margin-top: 25px;
   display: flex;
@@ -47,7 +47,6 @@
   flex-wrap: wrap; 
   gap: 22px; 
   justify-content: center;
-  width: 1128px;
   padding: 0;
 }
 
@@ -60,7 +59,9 @@
   align-items: center;
   background-color: #f0f0f0; 
   overflow: hidden;
+  border: 1px solid black;
 }
+
 
 .gallery-link {
   display: block;
@@ -73,10 +74,33 @@
   height: 100%;
   object-fit: cover;
   object-position: top; 
-  border-radius: 10px;
   display: block;
 }
  
 .is-hidden {
   display: none;
 }
+
+
+
+
+
+.gallery-item {
+  position: relative;
+  display: inline-block;
+}
+
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 7); /* Полупрозрачный фон, как в SimpleLightbox */
+  color: #111;
+  font-size: 14px;
+  padding: 5px;
+  text-align: center;
+  
+  opacity: 1;
+}
+

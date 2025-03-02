@@ -8,13 +8,15 @@ export const createGalleryCards = imgInfo => {
 
     return `
         <li class="gallery-item">
-            <a class="gallery-link" href="${imgInfo.largeImageURL}">
+            <a class="gallery-link" title="${altInfo}" href="${imgInfo.largeImageURL}">
                 <img
                     class="gallery-image"
                     src="${imgInfo.webformatURL}"
                     alt="${altInfo}" 
+                    title="${altInfo}"
                 />
             </a>
+             <div class="gallery-overlay">${altInfo}</div>
         </li>
     `;
 };
