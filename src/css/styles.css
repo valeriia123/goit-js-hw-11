@@ -5,7 +5,7 @@
   |============================
 */
 /* Common styles */
- @import url('./reset.css');
+@import url('./reset.css');
 @import url('./base.css');
 
 
@@ -25,7 +25,8 @@
   margin-right: 5px;
 }
 
-.search-btn {
+.search-btn,
+.load-more {
   width: 60px;
   height: 27px;
   color: aliceblue;
@@ -81,10 +82,6 @@
   display: none;
 }
 
-
-
-
-
 .gallery-item {
   position: relative;
   display: inline-block;
@@ -95,7 +92,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 7); /* Полупрозрачный фон, как в SimpleLightbox */
+  background: rgba(255, 255, 255, 7);
   color: #111;
   font-size: 14px;
   padding: 5px;
@@ -104,3 +101,11 @@
   opacity: 1;
 }
 
+.load-more {
+  width: 100px;
+  margin-top: 30px;
+}
+
+.load-more.is-hidden {
+  display: none;
+}
